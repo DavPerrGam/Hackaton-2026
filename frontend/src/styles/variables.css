@@ -1,0 +1,44 @@
+/*
+  Paleta de marca IDEAPRO (oficial)
+  ------------------------------------------------------------------
+  Tomada directamente de "IDEAPRO_ESPECIFICACIONES_DE_MARCA.pdf":
+
+    Azul oscuro : #1E2B39  (RGB 30-43-57   / CMYK 90-72-50-59)
+    Naranja     : #F39200  (RGB 243-146-0  / CMYK 0-50-97-0)
+
+  El resto de la escala (tonos más claros/oscuros de azul y naranja,
+  grises y verde de estado) son variaciones derivadas de esos dos
+  colores base para cubrir fondos, hovers y estados de la UI, ya que
+  la guía solo define los dos tonos principales del imagotipo.
+*/
+
+:root {
+  /* Azul institucional (base oficial: #1E2B39) */
+  --ip-azul-950: #1e2b39; /* color de marca exacto */
+  --ip-azul-900: #253747;
+  --ip-azul-800: #2f4459;
+  --ip-azul-700: #3c5570;
+  --ip-azul-100: #e7eaed;
+
+  /* Naranja institucional (base oficial: #F39200) */
+  --ip-naranja-600: #f39200; /* color de marca exacto */
+  --ip-naranja-500: #f5a733;
+  --ip-naranja-100: #fdecd1;
+
+  /* Verde de estado (uso funcional, no forma parte del imagotipo) */
+  --ip-verde-600: #1f8a70;
+  --ip-verde-100: #e2f5f0;
+
+  --ip-gris-900: #1b2430;
+  --ip-gris-600: #5b6472;
+  --ip-gris-300: #d7dce2;
+  --ip-gris-100: #f5f7fa;
+
+  --ip-blanco: #ffffff;
+
+  --ip-font-heading: 'Poppins', 'Segoe UI', system-ui, sans-serif;
+  --ip-font-body: 'Inter', 'Segoe UI', system-ui, sans-serif;
+
+  --ip-radius: 14px;
+  --ip-shadow: 0 10px 30px rgba(30, 43, 57, 0.12);
+}

@@ -1,0 +1,33 @@
+{
+  "name": "ideapro-agente-backend",
+  "version": "1.0.0",
+  "description": "Backend del agente inteligente IDEAPRO (diagnostico, perfilamiento y recomendacion)",
+  "type": "module",
+  "main": "src/server.js",
+  "scripts": {
+    "dev": "node --use-system-ca ./node_modules/nodemon/bin/nodemon.js src/server.js",
+    "start": "node --use-system-ca src/server.js",
+    "test": "node --test src/agent/opportunityMatch.test.js src/agent/scoring.test.js src/agent/recommendation.test.js src/agent/nexus.test.js src/agent/validation.test.js",
+    "create-admin": "node --use-system-ca src/scripts/createAdmin.js",
+    "db:info": "echo 'Ejecuta database/schema.sql y database/seed.sql en el SQL editor de Supabase'"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.45.0",
+    "bcryptjs": "^3.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "exceljs": "^4.4.0",
+    "express": "^5.0.0",
+    "express-rate-limit": "^7.4.0",
+    "jsonwebtoken": "^9.0.2",
+    "mammoth": "^1.12.2",
+    "multer": "^2.3.0",
+    "pdf-parse": "^2.4.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  },
+  "overrides": {
+    "uuid": "^11.1.1"
+  }
+}
